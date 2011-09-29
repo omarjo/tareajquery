@@ -1,0 +1,74 @@
+<html>
+
+<head>
+
+<title>JQuery Lightbox</title>
+
+<link rel="stylesheet" href="style.css" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	$(document).ready(function() {
+
+		$('.lightboxopen').click(function() {
+
+			$('.lightboxbg, .lightbox').fadeIn(1000);
+
+		});
+
+	});
+
+	
+
+	$(document).ready(function() {
+
+		$('.lightboxbg').click(function() {
+
+			$('.lightboxbg, .lightbox').fadeOut(600);
+
+		});
+
+	});
+
+</script>
+
+</head>
+
+<body>
+
+	<button class="lightboxopen">Open Lightbox</button>
+
+	<div class="lightboxbg"></div>
+
+	<div class="lightbox">
+
+		<p>With the introduction of CSS3 it has never been easier to create rich and beautiful sites and applications in HTML. There are many new technologies and extensions to CSS3 including: 2D Transformations, Transitions, 3D Transforms and WebFonts to name just a few.
+
+You can create rich user experiences with no coding effort required, just simply apply a little CSS to your existing applications.
+
+CSS3 Transformations allow you to apply rotations, scales, skews and translations to any DOM element with simple styles.</p>
+
+		
+
+		<p>Transitions allow you to specify how the style on a DOM element will animate between transformed states. For example, you can animate the background color when the user hovers over an element.
+
+pre {
+  transition: all 1s ease-inout;
+}
+
+pre:hover {
+  background-color: #F2F5FE;
+  border-color: black;
+}
+Applying 3D transforms is simple too. Just specify the transformation in 3d co-ordinates and you are ready.
+
+div {
+  transform: rotate3d(1,1,0, 45deg);</p>
+
+	</div>
+
+</body>
+
+</html>
